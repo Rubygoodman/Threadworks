@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    }
+
+html{
+max-width: 100%;
+font-family: 'Nunito', sans-serif;
+
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+p{
+letter-spacing: 1px;
+
+}
+
+.logo{
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.whole-group{
+    text-align: center;
+    background: url('/Volumes/M HD/My Sites/Threadworks/images/threadworksgroup.png') no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+    height: 320px;
+   
+}
+
+.blue-text{
+background-color:#191569 ;
+text-align: center;
+color: white;
+height:100%;
+padding:5px;
+}
+
+.group-text-large{
+    padding-top: 75px;
+    font-size: 40px;
+    font-weight: 1000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.group-text-small{
+    padding-top: 20px;
+    font-size: 21px;
+    font-weight:2;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.fill-form{
+display: block;
+
+}
+
+.contact-info{
+text-align: center;
+
+}
+footer{
+background: #2C2C2C;
+color: white;
+padding: 5px;
+}
+
+.fill-form label{
+text-align: center;
+}
+
+.leave-message {
+    padding-top:55px;
+
+}
+
+.box{
+text-align: center;
+width: 100%;
+padding-top:15px;
+margin-bottom: 10px;
+background: transparent;
+border-radius:40px;
+border-width:1px;
+}
+
+.submit{
+color: white;
+background: #DB2676;
+padding-bottom: 15px;
+border-radius:40px;
+border: 0;
+}
