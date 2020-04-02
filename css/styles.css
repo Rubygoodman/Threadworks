@@ -5,8 +5,10 @@
 html{
 max-width: 100%;
 font-family: 'Rajdhani', sans-serif;
-
+clear: both;
 }
+
+
 html,body
 {
     width: 100%;
@@ -18,18 +20,23 @@ html,body
 }
 
 h1{
-font-size:40px;
+font-size:90px;
 font-weight:bold;
+padding-bottom: 15px;
 }
 
 h2{
-font-size: 30px;
+font-size: 60px;
 font-weight:bold;
+padding-bottom: 15px;
 }
 
 p{
+  font-size: 30px;
 letter-spacing: 1px;
 font-weight: lighter;
+line-height: 1.5em;
+padding-bottom: 15px;
 }
 
 .logo{
@@ -41,7 +48,7 @@ font-weight: lighter;
 
 .whole-group{
     text-align: center;
-    background: url('/Volumes/M HD/My Sites/Threadworks/images/threadworksgroup.png') no-repeat center;
+    background: url('/images/threadworksgroup.png') no-repeat center;
     background-size: cover;
     overflow: hidden;
     color: white;
@@ -54,14 +61,13 @@ display:inline-block;
 background-color:#191569 ;
 text-align: center;
 color: white;
-height:;
-padding:10px;
 overflow:none;
+padding: 45px;
 
 } 
 
 .blue-text{
-padding-bottom: 50px;
+padding-bottom: 70px;
 
 }
 
@@ -116,10 +122,10 @@ text-align: center;
 .box{
 text-align: center;
 width: 100%;
-padding-top:15px;
+padding-top:25px;
 margin-bottom: 10px;
 background: transparent;
-border-radius:40px;
+border-radius:22.5px;
 border-width:1px;
 margin-top:7px;
 }
@@ -128,7 +134,7 @@ margin-top:7px;
 color: white;
 background: #DB2676;
 padding-bottom: 15px;
-border-radius:40px;
+border-radius:22.5px;
 border: 0;
 font-size:15px;
 }
@@ -144,25 +150,73 @@ font-weight: normal;
     font-weight: bold;
 
 }
-.social-buttons{
-display: block;
+.social-links{
+  display: flex;
+  justify-content: center;
+  font-weight: normal;
+  list-style-type: none;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
-.social-links img{
+a.social{
 display:inline-block;
 width: 30px;
 height: 30px;
 background-size: 45px 45px;
+}
 
-
+li{
+padding-right: 20px;
+padding-left:20px;
 }
 
 ul{
 list-style: none;
-
+padding: 0;
 }
 
 
 @media screen and (min-width: 650px) {
-    
+    .message-area{
+      float:right;
+      max-width: 25%
+    }
+    .contact-info {
+      float:left;
+    }
+  }
+
+  @media screen and (max-width: 650px){
+
+    h1{
+      font-size:40px;
+      font-weight:bold;
+      padding-bottom: 8px;
+      }
+      
+      h2{
+      font-size: 30px;
+      font-weight:bold;
+      padding-bottom: 8px;
+      }
+      
+      p{
+        font-size: 15px;
+      letter-spacing: 1px;
+      font-weight: lighter;
+      line-height: 1.5em;
+      padding-bottom: 8px;
+      }
+
+      .blue-text{
+        padding: 15px;
+
+      }
+     
+
+  }
+  .clearfix {
+    clear: both;
   }
