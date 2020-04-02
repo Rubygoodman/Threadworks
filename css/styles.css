@@ -4,7 +4,7 @@
 
 html{
 max-width: 100%;
-font-family: 'Nunito', sans-serif;
+font-family: 'Rajdhani', sans-serif;
 
 }
 html,body
@@ -14,10 +14,22 @@ html,body
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
+    display:block;
 }
+
+h1{
+font-size:40px;
+font-weight:bold;
+}
+
+h2{
+font-size: 30px;
+font-weight:bold;
+}
+
 p{
 letter-spacing: 1px;
-
+font-weight: lighter;
 }
 
 .logo{
@@ -38,11 +50,24 @@ letter-spacing: 1px;
 }
 
 .blue-text{
+display:inline-block;
 background-color:#191569 ;
 text-align: center;
 color: white;
-height:100%;
-padding:5px;
+height:;
+padding:10px;
+overflow:none;
+
+} 
+
+.blue-text{
+padding-bottom: 50px;
+
+}
+
+.blue-text p{
+font-weight: normal;
+
 }
 
 .group-text-large{
@@ -63,7 +88,9 @@ padding:5px;
 
 .fill-form{
 display: block;
-
+font-size:20px;
+margin-left:5%;
+margin-right:5%;
 }
 
 .contact-info{
@@ -74,6 +101,7 @@ footer{
 background: #2C2C2C;
 color: white;
 padding: 5px;
+display: block;
 }
 
 .fill-form label{
@@ -93,6 +121,7 @@ margin-bottom: 10px;
 background: transparent;
 border-radius:40px;
 border-width:1px;
+margin-top:7px;
 }
 
 .submit{
@@ -101,4 +130,39 @@ background: #DB2676;
 padding-bottom: 15px;
 border-radius:40px;
 border: 0;
+font-size:15px;
 }
+
+
+a {
+text-decoration: none;
+color: white;
+font-weight: normal;
+}
+
+.bolder{
+    font-weight: bold;
+
+}
+.social-buttons{
+display: block;
+}
+
+.social-links img{
+display:inline-block;
+width: 30px;
+height: 30px;
+background-size: 45px 45px;
+
+
+}
+
+ul{
+list-style: none;
+
+}
+
+
+@media screen and (min-width: 650px) {
+    
+  }
