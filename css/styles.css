@@ -47,7 +47,7 @@ padding-bottom: 15px;
 
 .whole-group{
     text-align: center;
-    background: url('/Volumes/M HD/My Sites/Threadworks/images/group-pic.png') no-repeat center;
+    background: url('../images/group-pic.png') no-repeat center;
     background-size: cover;
     overflow: hidden;
     color: white;
