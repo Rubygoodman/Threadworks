@@ -19,19 +19,19 @@ html,body
 }
 
 h1{
-font-size:90px;
+font-size:40px;
 font-weight:bold;
 padding-bottom: 15px;
 }
 
 h2{
-font-size: 60px;
+font-size: 20px;
 font-weight:bold;
 padding-bottom: 15px;
 }
 
 p{
-  font-size: 30px;
+  font-size: 16px;
 letter-spacing: 1px;
 font-weight: lighter;
 line-height: 1.5em;
@@ -47,25 +47,81 @@ padding-bottom: 15px;
 
 .whole-group{
     text-align: center;
-    background: url('../images/group-pic.png') no-repeat center;
-    background-size: cover;
+
     overflow: hidden;
     color: white;
-    height: 500px;
+   
+    
    position: relative;
-   margin-top: inherit;
+   
+}
+.group-pic {
+  width: 100%;
   
 }
+.second-group-pic {
+  width: 100%;
+  
+}
+
+.group-area{
+position: absolute;
+height: 100%;
+width:100%;
+top:0;
+left:0;
+}
 .left-oval{
-position: fixed;
+position: absolute;
+right:5%;
+bottom: 60%;
+}
+.right-oval{
+  position: absolute;
+  left:7%;
+  bottom: 50%;
 
 }
 .curve{
-position: inherit;
-text-align: center;
-width: 100%;
-padding-top: 200px;
+position: absolute;
+left:-2px;
+bottom:-5%;
+width: 102%;
 }
+
+.oval1{
+position: absolute;
+right:0;
+bottom:70%;
+}
+
+.oval2{
+position: absolute;
+left:0;
+bottom:50%;
+}
+.oval3{
+  position: absolute;
+  right:0;
+  bottom: 20%
+}
+
+.group-drop{
+  position: absolute;
+  right:0;
+  bottom:20%;
+  height:600px;
+  width: 200px;
+}
+
+.group-drop-2{
+position: absolute;
+left:0;
+bottom:20%;
+height:600px;
+width: 200px;
+}
+
 
 .blue-text{
 display:inline-block;
@@ -74,8 +130,10 @@ text-align: center;
 color: white;
 overflow:none;
 padding: 45px;
-
-
+padding-top:0;
+padding-left:15%;
+padding-right: 15%;
+position: relative;
 } 
 
 .blue-text{
@@ -89,19 +147,21 @@ font-weight: normal;
 }
 
 .group-text-large{
-    padding-top: 75px;
-    font-size: 40px;
+    font-size: 100px;
     font-weight: 1000;
-    padding-left: 10px;
-    padding-right: 10px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .group-text-small{
-    padding-top: 20px;
-    font-size: 21px;
+    font-size:50px;
     font-weight:2;
-    padding-left: 40px;
-    padding-right: 40px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .fill-form{
@@ -130,7 +190,7 @@ text-align: center;
 
 .leave-message {
     padding-top:55px;
-
+  text-align: center;
 }
 
 .box{
@@ -192,20 +252,97 @@ padding: 0;
 }
 
 
+@media screen and (max-width: 750px) and (min-width: 650px){
+  .logo{
+    max-width: 45%;
+
+  }
+  .group-text-large{
+    padding-top: 20px;
+    font-size: 40px;
+    top:30%;
+}
+
+.group-text-small{
+    padding-top: 30px;
+    font-size:10px;
+  top:70%;
+    
+}
+
+
+}
+@media screen and (min-width: 650px) {
+  .second-group-pic {
+    display: none;
+    
+        }
+        
+}
 @media screen and (min-width: 850px) {
     .message-area{
       float:right;
-      max-width: 25%
+      width: 30%;
+      text-align: left;
     }
     .contact-info {
+    padding-left: 5%;
       float:left;
+      width: 40%;
+      text-align: left;
     }
-    .curve{
-      padding-top:200px;
+    .bolder{
+    display: inline-block;
+    padding: 2px;
+    font-size: 20px;
+    }
+    .short-message{
+      font-size: 20px;
 
     }
+  
+    .blue-text{
+      text-align: center;
+    }
+    .oval1,
+        .oval2,
+        .oval3 {
+          display: none;
+        }
 
+        .social-links{
+          display: flex;
+          justify-content: left;
+          font-weight: normal;
+          list-style-type: none;
+          margin: 0 auto;
+          padding-top: 15px;
+          padding-bottom: 3px;
+        }
+        
+        a.social{
+        display:inline-block;
+        width: 20px;
+        height: 20px;
+        background-size: 45px 45px;
+        }
 
+        .hello{
+          font-size: 40px;
+          padding-top: 55px;
+        }
+
+        .leave-message{
+          font-size:40px ;
+          text-align: left;
+         
+        }
+
+        li{ 
+          padding-left:2px;
+          padding-right:20px;
+        }
+       
   }
 
   @media screen and (max-width: 850px){
@@ -234,9 +371,122 @@ padding: 0;
         padding: 15px;
 
       }
-     
+
+      .right-oval{
+        display: none;
+      }
+
+      .left-oval{
+        display: none;
+      }
+      
+      .group-drop,
+      .group-drop-2 {
+        display: none;
+      }
+      .hello{
+        font-size: 30px;
+        padding-top: 30px;
+
+      }
+      .leave-message {
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+      .group-text-large{
+        padding-top: 20px;
+        font-size: 50px;
+       
+    }
+    
+    .group-text-small{
+        padding-top: 20px;
+        font-size:15px;
+      
+    }
+}
+    
+
+@media screen and (min-width: 1200px) {
+  p{
+    padding-left: 15%;
+    padding-right:15%;
 
   }
+
+}
   .clearfix {
     clear: both;
   }
+
+  @media screen and (max-width: 1200px) {
+     .right-oval {
+       height: 120px;
+       width: 120px;
+     }
+
+     .left-oval {
+      height: 70px;
+      width:70px;
+
+     }
+     .group-text-large{
+      padding-top: 20px;
+      font-size: 75px;
+     
+  }
+  
+  .group-text-small{
+      padding-top: 20px;
+      font-size:45px;
+      
+  }
+  p{
+    padding-left: 15%;
+    padding-right:15%;
+
+  }
+  }
+  @media screen and (max-width: 900px) {
+
+    .group-text-large{
+      padding-top: 20px;
+      font-size: 60px;
+     
+  }
+  
+  .group-text-small{
+      padding-top: 20px;
+      font-size:30px;
+      
+  }
+  
+  }
+
+  @media screen and (max-width: 649px){
+    .group-pic {
+      display: none;
+      
+        }
+
+        .curve {
+          bottom: -14px;
+
+        }
+     
+      }
+  
+      @media screen and (max-width: 724px){
+        .group-text-large{
+          padding-top: 20px;
+          font-size: 100%;
+         
+      }
+      
+      .group-text-small{
+          padding-top: 20px;
+          font-size:100%;
+          
+      }
+      }
