@@ -47,12 +47,24 @@ padding-bottom: 15px;
 
 .whole-group{
     text-align: center;
-    background: url('/images/threadworksgroup.png') no-repeat center;
+    background: url('/Volumes/M HD/My Sites/Threadworks/images/group-pic.png') no-repeat center;
     background-size: cover;
     overflow: hidden;
     color: white;
-    height: 320px;
-   
+    height: 500px;
+   position: relative;
+   margin-top: inherit;
+  
+}
+.left-oval{
+position: fixed;
+
+}
+.curve{
+position: inherit;
+text-align: center;
+width: 100%;
+padding-top: 200px;
 }
 
 .blue-text{
@@ -62,6 +74,7 @@ text-align: center;
 color: white;
 overflow:none;
 padding: 45px;
+
 
 } 
 
@@ -108,6 +121,7 @@ color: white;
 padding: 5px;
 display: block;
 clear: both;
+overflow: hidden;
 }
 
 .fill-form label{
@@ -178,7 +192,7 @@ padding: 0;
 }
 
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 850px) {
     .message-area{
       float:right;
       max-width: 25%
@@ -186,9 +200,15 @@ padding: 0;
     .contact-info {
       float:left;
     }
+    .curve{
+      padding-top:200px;
+
+    }
+
+
   }
 
-  @media screen and (max-width: 650px){
+  @media screen and (max-width: 850px){
 
     h1{
       font-size:40px;
